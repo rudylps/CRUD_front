@@ -1,0 +1,26 @@
+<mat-card class="example-card">
+  <div class="container">
+  <h1>
+  Ajout d'une personne
+  </h1>
+</div>
+
+<form #f (ngSubmit)="onsubmit(f)" class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nom"
+      type="text"
+      name="nom"
+      [(ngModel)]="personne.nom">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Prénom"
+        type="text"
+        name="prenom"
+        [(ngModel)]="personne.prenom">
+      </mat-form-field>
+      <br>
+      <button  type="submit" mat-button routerLink="/listePersonnes">Retour</button>
+          <button type="submit" mat-button>Valider</button>
+  </form>
+</mat-card>

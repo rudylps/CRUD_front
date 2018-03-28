@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+<div class="container">
+
+  <div class="partie1">
+      <h1 class="titre">Liste des personnes</h1>
+
+  </div>
+
+  <div *ngIf="listePersonnes.length != 0">
+         <button 
+         type="submit" mat-button *ngFor="let personne of listePersonnes"
+              [routerLink]="['/personne', personne.id]">
+                  <div>
+                <p><b>{{ personne.nom }}</b></p>
+                <p>{{ personne.prenom }}</p>
+              </div>
+         </button>
+              <br>
+   </div>
+   <h3 *ngIf="listePersonnes.length == 0">Aucune personne créée</h3>
+
+</div> 
+</mat-card>
