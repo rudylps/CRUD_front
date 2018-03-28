@@ -20,7 +20,6 @@ import { MatModule } from '../mat-module';
 import { ListePersonnesComponent } from './liste-personnes/liste-personnes.component';
 import { MatIconModule } from '@angular/material';
 import { PersonneDetailComponent } from './personne-detail/personne-detail.component';
-import { EditerPersonneComponent } from './editer-personne/editer-personne.component';
 
 // const routes: Routes = [
 //   {path: 'ajoutPersonne', component: AddPersonneComponent},
@@ -33,8 +32,7 @@ import { EditerPersonneComponent } from './editer-personne/editer-personne.compo
     AppComponent,
     AddPersonneComponent,
     ListePersonnesComponent,
-    PersonneDetailComponent,
-    EditerPersonneComponent
+    PersonneDetailComponent
   ],
   imports: [
     BrowserModule,
