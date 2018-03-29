@@ -1,8 +1,13 @@
 h1
 {
     text-align: center;
-    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+    font-family: "Arial Black", Arial, Verdana, sans-serif;
     color:rgb(46,156,211);
+}
+h5
+{
+  font-family: "Arial Black", Arial, Verdana, sans-serif;
+  text-align: center;
 }
 .example-card {
     margin: 20px;
