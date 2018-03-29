@@ -19,7 +19,8 @@ export class PersonneDetailComponent implements OnInit {
     private personneService: PersonneServiceService,
     private apiService: ApiService) { }
 
-  ngOnInit() { console.log('init');
+  // Initiatisation du composant
+    ngOnInit() { console.log('init');
 
   this.route.paramMap.subscribe((params: ParamMap) => {
     this.id = params.get('id');
@@ -34,6 +35,7 @@ export class PersonneDetailComponent implements OnInit {
   });
   }
 
+  // suppression d'une personne
   deletePersonne() {
     this.personneService.deletePersonne(
       this.personne.id
@@ -42,6 +44,7 @@ export class PersonneDetailComponent implements OnInit {
     );
   }
 
+  // édition, mise à jour d'une personne
   updatePersonne(personne: Personne) {
     this.personneService.updatePersonne(this.personne)
     .subscribe(
