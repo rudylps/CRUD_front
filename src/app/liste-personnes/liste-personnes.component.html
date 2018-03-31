@@ -8,7 +8,8 @@
 
   <div *ngIf="listePersonnes.length != 0">
          <button 
-         type="submit" mat-button *ngFor="let personne of listePersonnes"
+         type="submit"
+         mat-button *ngFor="let personne of listePersonnes"
               [routerLink]="['/personne', personne.id]">
                   <div>
                 <p><b>{{ personne.nom }}</b></p>

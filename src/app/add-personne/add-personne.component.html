@@ -10,6 +10,10 @@
       <input matInput placeholder="Nom"
       type="text"
       name="nom"
+      id="nom"
+      pattern="^[a-zA-Z]+$"
+      title="Attention, seulement des lettres!"
+      required
       [(ngModel)]="personne.nom">
     </mat-form-field>
     <br>
@@ -17,6 +21,7 @@
         <input matInput placeholder="Prénom"
         type="text"
         name="prenom"
+        pattern="^[a-zA-Z]+$"
         [(ngModel)]="personne.prenom">
       </mat-form-field>
       <br>
