@@ -28,3 +28,17 @@ Dans le terminal, inscrire
 ``ng serve``
 * Sous un navigateur web de votre choix, inscrire l'adresse  
 [localhost://4200](http://localhost:4200/)
+------
+## Présentation
+Ce projet permet d'afficher une liste de personnes (*read*), d'y ajouter des personnes (*create*), de les éditer (*update*) ou de les supprimer (*delete*).  
+Ceci est une partie destinée à intégrer le projet commun PROJET FIL ROUGE pour simuler un logiciel de la police qui permet de lier des armes, véhicules, et personnes à des affaires judiciaires.
+* ### Sous *Angular*
+	* Gestion des __composants__  
+	``add-personne``  
+	``liste-personnes``  
+	``personne-detail``  
+	des __services__  
+	``api.service.ts``  
+	``personne-service.service.ts``  
+	et du __module__  
+	``app.module.ts``
